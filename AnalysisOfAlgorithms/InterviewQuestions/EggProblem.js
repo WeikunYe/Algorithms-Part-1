@@ -3,7 +3,6 @@ const eggDrop = (K, N) => {
 		Array.from(Array(N + 1), (x, i) => i)
 	);
 	dp[0] = Array(N + 1).fill(0);
-	console.log(dp);
 
 	for (let egg = 2; egg <= K; egg++) {
 		for (let flr = 2; flr <= N; flr++) {

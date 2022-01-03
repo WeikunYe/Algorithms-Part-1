@@ -41,7 +41,6 @@ export class Percolation {
 		this.#grid[r - 1][c - 1] = true;
 
 		const neighbours = this.#neighbours(r, c);
-		//console.log(neighbours);
 
 		for (const neighbour of neighbours) {
 			const [nR, nC] = neighbour;

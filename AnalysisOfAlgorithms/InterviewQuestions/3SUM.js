@@ -39,28 +39,17 @@ class ThreeSum {
 		for (let i = 0; i < length; i++) {
 			for (let j = i + 1; j < length; j++) {
 				const thirdInt = 0 - (sortedArr[i] + sortedArr[j]);
-
 				const bs = new BinarySearch(sortedArr);
-
 				const bsResult = bs.search(thirdInt);
-
 				if (
 					bsResult !== -1 &&
 					sortedArr[bsResult] !== sortedArr[i] &&
 					sortedArr[bsResult] !== sortedArr[j]
 				) {
-					console.log(
-						sortedArr[i] +
-							" " +
-							sortedArr[j] +
-							" " +
-							sortedArr[bsResult]
-					);
 					count++;
 				}
 			}
 		}
-
 		return count / 3;
 	}
 }
