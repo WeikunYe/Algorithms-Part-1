@@ -1,4 +1,4 @@
-class ShaffleSort {
+class ShuffleSort {
 	static sort(arr) {
 		const N = arr.length;
 
@@ -24,6 +24,6 @@ class ShaffleSort {
 
 const input = [13, 6, -7, 12, 100, 33, -8, 0, 0, -8, -8];
 
-ShaffleSort.sort(input);
+ShuffleSort.sort(input);
 
 console.log(input);
